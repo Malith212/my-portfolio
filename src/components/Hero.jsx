@@ -1,17 +1,37 @@
 import React from 'react';
-import profileImage from '../assets/45443D1A-2C07-4112-ABF3-1D8A8A46C0F9.jpeg'; // Import your image here
+import { FaEnvelope, FaLink } from 'react-icons/fa'; // Add icons for buttons
+import profileImage from '../assets/45443D1A-2C07-4112-ABF3-1D8A8A46C0F9.jpeg';
 
 const Hero = () => {
   return (
-    <section className="text-center py-12">
-      <img src={profileImage} alt="Malith Weerarathne" className="w-28 h-28 rounded-full mx-auto mb-6"/>
-      <h2 className="text-3xl font-semibold mb-2">Malith Weerarathne.</h2>
-      <p className="text-gray-600 text-lg mb-6">
-        Hi! I’m Malith 👋 A product designer focused on building seamless design systems and intuitive mobile experiences.
-      </p>
-      <div className="flex justify-center space-x-4">
-        <button className="bg-[#2D3436] text-white py-2 px-4 rounded shadow-md">CV</button>
-        <button className="bg-gray-200 text-black py-2 px-4 rounded shadow-md">Get in Touch</button>
+    <section className="flex justify-center items-center py-16 ">
+      <div className="bg-white  p-6 flex flex-col items-center max-w-lg">
+        {/* Profile Image */}
+        <img
+          src={profileImage}
+          alt="Malith Weerarathne"
+          className="w-16 h-16 rounded-full mb-4"
+        />
+        
+        {/* Name */}
+        <h2 className="text-xl font-semibold text-gray-800 mb-2">Malith Weerarathne.</h2>
+
+        {/* Introduction Text */}
+        <p className="text-center text-gray-600 text-sm mb-4">
+          Hi! I’m Malith 👋 A product designer focused on building seamless design systems and intuitive mobile experiences.
+        </p>
+
+        {/* Buttons */}
+        <div className="flex space-x-4">
+          <button className="bg-white text-gray-800 py-2 px-4 flex items-center space-x-2 rounded shadow hover:bg-gray-100">
+            <FaLink className="text-gray-600" />
+            <span>CV</span>
+          </button>
+          <button className="bg-white text-gray-800 py-2 px-4 flex items-center space-x-2 rounded shadow hover:bg-gray-100">
+            <FaEnvelope className="text-gray-600" />
+            <span>Get In Touch</span>
+          </button>
+        </div>
       </div>
     </section>
   );
