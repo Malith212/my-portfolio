@@ -1,21 +1,18 @@
-import React from "react";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="font-sans bg-[white] min-h-screen">
+    <div className="font-sans">
       <Navbar />
-
-      <div className="">
-        <Hero />
-        <Projects />
-      </div>
-
+      <Hero />
+      <About />
+      <Projects />
       <Footer />
-
     </div>
   );
 }

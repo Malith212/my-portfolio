@@ -1,17 +1,15 @@
 import React from 'react';
-import { FaLinkedin, FaBehance } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center py-4 px-8 bg-white shadow-md">
-      <h1 className="text-2xl font-bold text-gray-800">Malith Weerarathne.</h1>
-      <div className="flex space-x-6">
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="text-2xl text-gray-600 hover:text-gray-800" />
-        </a>
-        <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
-          <FaBehance className="text-2xl text-gray-600 hover:text-gray-800" />
-        </a>
+    <nav className="fixed w-full bg-white shadow-md p-4 z-50">
+      <div className="container mx-auto flex justify-between items-center">
+        <h1 className="text-lg font-bold">Malith Weerarathne</h1>
+        <ul className="flex space-x-6">
+          <li><a href="#about" className="text-gray-700 hover:text-black">About</a></li>
+          <li><a href="#projects" className="text-gray-700 hover:text-black">Projects</a></li>
+          <li><a href="#contact" className="text-gray-700 hover:text-black">Contact</a></li>
+        </ul>
       </div>
     </nav>
   );
