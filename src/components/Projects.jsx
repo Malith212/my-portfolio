@@ -33,7 +33,7 @@ const Projects = () => {
                 </p>
               </div>
               <a
-                href="https://example.com"  {/* Replace with a valid link */}
+                href="https://github.com/Malith212"  // Replace with a valid link
                 className="inline-block bg-gradient-to-r from-[#141E30] to-[#243B55] text-white py-2 px-4 rounded hover:bg-[#2D3436] transition-colors duration-300"
               >
                 View Project
@@ -60,7 +60,7 @@ const Projects = () => {
                 </p>
               </div>
               <a
-                href="https://example.com"  {/* Replace with a valid link */}
+                href="https://github.com/Malith212"  // Replace with a valid link
                 className="inline-block bg-gradient-to-r from-[#141E30] to-[#243B55] text-white py-2 px-4 rounded hover:bg-[#2D3436] transition-colors duration-300"
               >
                 View Project
