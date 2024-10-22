@@ -9,9 +9,7 @@ const Projects = () => {
       id="projects"
     >
       <div className="container mx-auto text-center px-4">
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-12 tracking-tight">
-          Projects
-        </h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
           {/* Project Card 1 */}

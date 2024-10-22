@@ -44,8 +44,8 @@ const ContactForm = () => {
 
           {/* Left side text */}
           <div className="lg:w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white">Get in Touch</h2>
-            <p className="text-lg text-white font-normal mt-4">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white">Get in Touch!</h2>
+            <p className="text-lg text-white font-extralight mt-4">
               We’d love to hear from you! <br></br>Send us a message using the form, or
               email us.
             </p>
