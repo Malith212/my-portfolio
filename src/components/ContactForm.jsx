@@ -5,7 +5,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -41,11 +41,14 @@ const ContactForm = () => {
       <div className="container mx-auto px-4">
         {/* Flex container for large screens */}
         <div className="md:flex md:items-center md:justify-between">
-          {/* Left Column: Text Centered */}
-          <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0 flex justify-center md:justify-start">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white">
-              Get in Touch
-            </h2>
+
+          {/* Left side text */}
+          <div className="lg:w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white">Get in Touch</h2>
+            <p className="text-lg text-white font-normal mt-4">
+              We’d love to hear from you! <br></br>Send us a message using the form, or
+              email us.
+            </p>
           </div>
 
           {/* Right Column: Contact Form */}
