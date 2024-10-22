@@ -5,6 +5,7 @@ import Projects from '../components/Projects'
 import Footer from '../components/Footer'
 import Skills from '../components/Skills'
 import ContactForm from '../components/ContactForm'
+import KnowledgeSharing from '../components/KnowledgeSharing'
 
 function Main() {
     return (
@@ -14,6 +15,7 @@ function Main() {
           <Projects />
           <Skills />
           <ContactForm />
+          <KnowledgeSharing />
           <Footer />
         </div>
       );
