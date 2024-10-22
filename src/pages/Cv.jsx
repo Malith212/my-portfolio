@@ -5,7 +5,7 @@ import Education from "../components/cv/Education";
 import Certificates from "../components/cv/Certificates";
 import Languages from "../components/cv/Languages";
 import Achievements from "../components/cv/Achievements";
-import ExtracurricularActivities from "../components/cv/ Extracurricular";
+import ExtracurricularActivities from "../components/cv/Extracurricular";
 import Footer from "../components/Footer";
 
 function Cv() {
@@ -16,8 +16,9 @@ function Cv() {
           <DownloadCV />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Education />
-            <Certificates />
             <ExtracurricularActivities />
+            <Certificates />
+            
             <Languages />
             <Achievements />
           </div>
