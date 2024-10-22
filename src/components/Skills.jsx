@@ -38,7 +38,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              className="p-4 bg-[#2D3436] text-white shadow-md rounded-lg cursor-pointer transition-transform"
+              className="p-4 bg-gradient-to-r from-[#141E30] to-[#243B55] text-white shadow-md rounded-lg cursor-pointer transition-transform"
               variants={itemVariants}
               whileHover="hover"
             >
