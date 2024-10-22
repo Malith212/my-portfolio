@@ -70,7 +70,7 @@ const Hero = () => {
           <motion.a
             href={cv}
             download="Malith_Weerarathne_CV.pdf"
-            className="bg-transparent border-2 border[#2D3436] text-[#2D3436] py-2 px-6 rounded text-sm sm:text-base hover:bg-[#2D3436] hover:text-white transition-colors duration-300"
+            className="bg-transparent border-2 border[#2D3436] text-[#2D3436] py-2 px-6 rounded text-sm sm:text-base hover:bg-gradient-to-r from-[#141E30] to-[#243B55] hover:text-white transition-colors duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300 }}
