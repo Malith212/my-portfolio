@@ -1,44 +1,42 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom'; // Import Link and useLocation from react-router-dom
 
 const Navbar = () => {
   const [section, setSection] = useState(''); // State to track current section
+  const location = useLocation(); // Hook to get the current location
 
-  const handleScroll = (id, sectionName) => {
-    const sectionElement = document.querySelector(id);
-    if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: 'smooth' });
-      setSection(sectionName); // Update the section state
-    }
-  };
-
-  // UseEffect to reset the section when the page is refreshed or loaded
   useEffect(() => {
-    setSection(''); // Reset to root on page load or refresh
-  }, []);
+    // Update section based on the current pathname
+    if (location.pathname === '/cv') {
+      setSection('Resume');
+    } else {
+      setSection(''); // Reset to root on page load or refresh
+    }
+  }, [location.pathname]); // Depend on location.pathname to trigger updates
 
   return (
     <nav className="fixed w-full bg-white shadow-md p-4 z-50">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        {/* Dynamically updating the heading */}
+        {/* Dynamically updating the heading as a link */}
         <h1 className="text-lg font-bold mb-4 md:mb-0">
-          Malith Weerarathne{section && `/${section}`}
+          <Link to="/" className="text-gray-700 hover:text-blue-600">
+            Malith Weerarathne{section && ` / ${section}`}
+          </Link>
         </h1>
         <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
           <li>
-            <button
-              onClick={() => handleScroll('#projects', 'projects')}
-              className="text-gray-700 hover:text-blue-600"
-            >
-              Projects
-            </button>
+            <Link to="/" className="text-gray-700 hover:text-blue-600">
+              Home
+            </Link>
           </li>
           <li>
-            <button
-              onClick={() => handleScroll('#contact-form', 'contact')}
+            <Link
+              to="/cv"
               className="text-gray-700 hover:text-blue-600"
+              onClick={() => setSection('Resume')} // Update the section when clicking Resume
             >
-              Contact
-            </button>
+              Resume
+            </Link>
           </li>
         </ul>
       </div>
