@@ -38,7 +38,7 @@ const Education = () => {
               key={index}
               className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-6 rounded-lg shadow-md border border-gray-200"
             >
-              <p className="text-lg font-semibold text-white mb-2">
+              <p className="text-sm font-semibold text-white mb-2">
                 {item.year}
               </p>
               <h3 className="text-lg font-bold mb-1">{item.degree}</h3>

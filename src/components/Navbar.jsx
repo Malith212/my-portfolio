@@ -23,7 +23,7 @@ const Navbar = () => {
             Malith Weerarathne{section && ` / ${section}`}
           </Link>
         </h1>
-        <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+        <ul className="flex flex-col items-center md:flex-row md:space-y-0 space-y-4 md:space-x-6">
           <li>
             <Link to="/" className="text-gray-700 hover:text-blue-600">
               Home
