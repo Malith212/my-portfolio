@@ -55,7 +55,7 @@ const Skills = () => {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Frontend Skills */}
           <motion.div
-            className="p-6 bg-gray-100 rounded-lg shadow-md"
+            className="p-6 bg-whie rounded-lg shadow-md"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -82,7 +82,7 @@ const Skills = () => {
 
           {/* Backend Skills */}
           <motion.div
-            className="p-6 bg-gray-100 rounded-lg shadow-md"
+            className="p-6 bg-white rounded-lg shadow-md"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -109,7 +109,7 @@ const Skills = () => {
 
           {/* Design Tools */}
           <motion.div
-            className="p-6 bg-gray-100 rounded-lg shadow-md"
+            className="p-6 bg-white rounded-lg shadow-md"
             variants={containerVariants}
             initial="hidden"
             animate="visible"

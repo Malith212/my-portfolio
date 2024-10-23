@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Dynamically updating the heading as a link */}
         <h1 className="text-lg font-bold mb-4 md:mb-0">
-          <Link to="/" className="text-gray-700 hover:text-blue-600">
+          <Link to="/" className="text-gray-700 ">
             Malith Weerarathne{section && ` / ${section}`}
           </Link>
         </h1>
