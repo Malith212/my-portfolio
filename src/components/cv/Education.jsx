@@ -36,7 +36,7 @@ const Education = () => {
           {educationDetails.map((item, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-6 rounded-lg shadow-md border border-gray-200"
+              className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-6 rounded-lg shadow-md border border-gray-200 transform transition-transform duration-300 hover:scale-105"
             >
               <p className="text-sm font-semibold text-white mb-2">
                 {item.year}

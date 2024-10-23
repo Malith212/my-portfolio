@@ -15,10 +15,10 @@ const Languages = () => {
           {languagesData.map((lang) => (
             <div
               key={lang.id}
-              className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-6 rounded-lg shadow-md"
+              className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
             >
               <h3 className="text-lg font-bold">{lang.language}</h3>
-              <p className="text-white text-esm font-thin">{lang.proficiency}</p>
+              <p className="text-white text-sm font-thin">{lang.proficiency}</p>
             </div>
           ))}
         </div>

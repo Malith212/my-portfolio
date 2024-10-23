@@ -9,8 +9,8 @@ const Extracurricular = () => {
         </h2>
         <div className="grid grid-cols-1 gap-6">
           {/* ITM Degree Batch Representative */}
-          <div className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-4 border rounded-lg shadow-sm">
-            <h3 className="text-lg font-semibold text-white">
+          <div className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-4 border rounded-lg shadow-sm transform transition-transform duration-300 hover:scale-105">
+            <h3 className="text-md font-normal text-white">
               Main Batch Representative of ITM Degree, Faculty of Information
               Technology, University of Moratuwa
             </h3>
@@ -18,8 +18,8 @@ const Extracurricular = () => {
           </div>
 
           {/* FIT Moments */}
-          <div className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-4 border rounded-lg shadow-sm">
-            <h3 className="text-lg font-semibold text-white">FIT Moments</h3>
+          <div className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-4 border rounded-lg shadow-sm transform transition-transform duration-300 hover:scale-105">
+            <h3 className="text-md font-normal text-white">FIT Moments</h3>
             <p className="text-white text-sm">2022 - Present</p>
             <ul className="list-disc pl-5 text-sm text-white mt-2">
               <li>
@@ -31,8 +31,8 @@ const Extracurricular = () => {
           </div>
 
           {/* IEEE Student Branch */}
-          <div className=" bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-4 border rounded-lg shadow-sm">
-            <h3 className="text-lg font-semibold text-white">
+          <div className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-4 border rounded-lg shadow-sm transform transition-transform duration-300 hover:scale-105">
+            <h3 className="text-md font-normal text-white">
               IEEE Student Branch University of Moratuwa
             </h3>
             <p className="text-white text-sm">2022 - 2023</p>

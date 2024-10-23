@@ -32,9 +32,9 @@ const Achievements = () => {
           {achievementsData.map((achievement) => (
             <div
               key={achievement.id}
-              className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-6 rounded-lg shadow-md border border-gray-200"
+              className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-6 rounded-lg shadow-md border border-gray-200 transform transition-transform duration-300 hover:scale-105"
             >
-              <h3 className="text-lg font-bold">{achievement.title}</h3>
+              <h3 className="text-lg font-normal">{achievement.title}</h3>
               <p className="text-white text-sm font-light">{achievement.organization}</p>
             </div>
           ))}

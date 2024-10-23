@@ -57,7 +57,7 @@ const Hero = () => {
         >
           <motion.a
             href="#projects"
-            className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white py-2 px-6 mb-3 sm:mb-0 rounded text-sm sm:text-base hover:bg-black transition-colors duration-300"
+            className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white py-2 px-6 mb-3 hover:from-[#0F2027] hover:to-[#2C5364] sm:mb-0 rounded text-sm sm:text-base hover:bg-black transition-colors duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300 }}
