@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaBehance, FaGithub } from "react-icons/fa"; // Importing icons from React Icons
 import profileImage from "../assets/45443D1A-2C07-4112-ABF3-1D8A8A46C0F9.jpeg"; // Profile image
-import cv from "../assets/cv.pdf"; // Assuming your CV is in the assets folder as a PDF
 
 const Hero = () => {
   return (
