@@ -36,15 +36,15 @@ const Education = () => {
           {educationDetails.map((item, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md border border-gray-200"
+              className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-6 rounded-lg shadow-md border border-gray-200"
             >
-              <p className="text-lg font-semibold text-gray-600 mb-2">
+              <p className="text-sm font-semibold text-white mb-2">
                 {item.year}
               </p>
-              <h3 className="text-xl font-bold mb-1">{item.degree}</h3>
-              <p className="text-sm text-gray-500 mb-1">{item.institution}</p>
+              <h3 className="text-lg font-bold mb-1">{item.degree}</h3>
+              <p className="text-sm text-white mb-1">{item.institution}</p>
               {item.details && (
-                <p className="text-sm text-gray-400">{item.details}</p>
+                <p className="text-sm text-white">{item.details}</p>
               )}
             </div>
           ))}

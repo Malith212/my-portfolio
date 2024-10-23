@@ -44,12 +44,12 @@ const Certifications = () => {
         <h2 className="text-2xl font-bold mb-6 text-gray-800">Certifications</h2>
         <div className="space-y-4">
           {certifications.map((cert, index) => (
-            <div key={index} className="border rounded-lg shadow-sm">
+            <div key={index} className="border bg-gradient-to-r from-[#141E30] to-[#243B55] text-white rounded-lg shadow-sm">
               <button
                 onClick={() => toggleCert(index)}
                 className="w-full flex justify-between items-center py-4 px-6 text-left focus:outline-none"
               >
-                <span className="text-lg font-semibold text-gray-800">
+                <span className="text-sm font-light text-white">
                   {cert.title}
                 </span>
                 <span>{openCert === index ? '-' : '+'}</span>
@@ -60,7 +60,7 @@ const Certifications = () => {
                     href={cert.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block p-2 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded"
+                    className="inline-block mt-2 px-4 py-2 bg-white text-gray-800 font-light text-sm rounded-md hover:text-blue-400 transition-colors duration-300"
                   >
                     View Certificate
                   </a>
