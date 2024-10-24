@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom'; // Import Link and useLocation from react-router-dom
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [section, setSection] = useState(''); // State to track current section
@@ -9,6 +9,8 @@ const Navbar = () => {
     // Update section based on the current pathname
     if (location.pathname === '/cv') {
       setSection('Resume');
+    } else if (location.pathname === '/profile') {
+      setSection('Profile');
     } else {
       setSection(''); // Reset to root on page load or refresh
     }
@@ -31,11 +33,10 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/cv"
+              to="/profile"
               className="text-gray-700 hover:text-blue-600"
-              onClick={() => setSection('Resume')} // Update the section when clicking Resume
             >
-              Resume
+              Profile
             </Link>
           </li>
         </ul>

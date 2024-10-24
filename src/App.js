@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Main from './pages/Main';
-import Cv from './pages/Cv';
+import Profile from './pages/Profile';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/cv" element={<Cv />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
