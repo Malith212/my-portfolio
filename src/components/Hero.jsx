@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaLinkedin, FaBehance, FaGithub } from "react-icons/fa"; // Importing icons from React Icons
+import { FaLinkedin, FaBehance, FaGithub } from "react-icons/fa";
+import { Link } from "react-scroll"; // Import Link from react-scroll
 import profileImage from "../assets/45443D1A-2C07-4112-ABF3-1D8A8A46C0F9.jpeg"; // Profile image
 
 const Hero = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
       <div className="absolute bottom-20 left-20 w-48 h-48 bg-[#FFB3B3] rounded-full opacity-40 filter blur-xl -z-10"></div>
 
       <motion.div
-        className="text-center w-full max-w-lg" // Ensure max width is constrained
+        className="text-center w-full max-w-lg"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -45,7 +46,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
         >
-          I’m a product designer focused on building seamless design systems.
+          I am a full stack developer with a strong focus on UX engineering and
+          front-end development. 
         </motion.p>
 
         {/* Button Animation with Hover Effect */}
@@ -55,21 +57,20 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.6, ease: "easeOut" }}
         >
-          <motion.a
-            href="#projects"
-            className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white py-2 px-6 mb-3 hover:from-[#0F2027] hover:to-[#2C5364] sm:mb-0 rounded text-sm sm:text-base hover:bg-black transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 300 }}
+          <Link
+            to="projects"
+            smooth={true}
+            duration={800}
+            className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white py-2 px-6 mb-3 hover:from-[#0F2027] hover:to-[#2C5364] sm:mb-0 rounded text-sm sm:text-base hover:bg-black transition-colors duration-300 cursor-pointer"
           >
             Explore My Work
-          </motion.a>
+          </Link>
         </motion.div>
 
         {/* Social Media Links */}
         <div className="mt-6 sm:mt-8 flex justify-center space-x-4">
           <motion.a
-            href="https://www.linkedin.com/in/malith-weerarathne"
+            href="https://www.linkedin.com/in/malith-weeraratne-780550268/"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2 }}
@@ -79,7 +80,7 @@ const Hero = () => {
             <FaLinkedin />
           </motion.a>
           <motion.a
-            href="https://www.behance.net/malithweerarathne"
+            href="https://www.behance.net/malithnavindu"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2 }}
@@ -89,7 +90,7 @@ const Hero = () => {
             <FaBehance />
           </motion.a>
           <motion.a
-            href="https://github.com/malithweerarathne"
+            href="https://github.com/Malith212"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2 }}
