@@ -9,10 +9,10 @@ const Skills = () => {
     "JavaScript",
     "HTML5",
     "CSS3",
-    "Framer Motion",
+    "Tailwind CSS",
   ];
-  const backendSkills = ["Node.js", "Express", "MongoDB", "Firebase"];
-  const designSkills = ["Figma", "Adobe XD", "Sketch"];
+  const backendSkills = ["Next.js", "ASP.NET Core", "MongoDB", "Firebase","MySQL"];
+  const designSkills = ["Figma", "Adobe XD", "Sketch","Illustrator","PhotoShop"];
 
   // Variants for animation
   const containerVariants = {
@@ -74,7 +74,7 @@ const Skills = () => {
                   variants={itemVariants}
                   whileHover="hover"
                 >
-                  <h4 className="text-lg font-bold">{skill}</h4>
+                  <h4 className="text-md font-light">{skill}</h4>
                 </motion.div>
               ))}
             </motion.div>
@@ -101,7 +101,7 @@ const Skills = () => {
                   variants={itemVariants}
                   whileHover="hover"
                 >
-                  <h4 className="text-lg font-bold">{skill}</h4>
+                  <h4 className="text-md font-light">{skill}</h4>
                 </motion.div>
               ))}
             </motion.div>
@@ -128,7 +128,7 @@ const Skills = () => {
                   variants={itemVariants}
                   whileHover="hover"
                 >
-                  <h4 className="text-lg font-bold">{skill}</h4>
+                  <h4 className="text-md font-light">{skill}</h4>
                 </motion.div>
               ))}
             </motion.div>
