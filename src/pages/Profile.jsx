@@ -8,7 +8,7 @@ import Achievements from "../components/cv/Achievements";
 import ExtracurricularActivities from "../components/cv/Extracurricular";
 import Footer from "../components/Footer";
 
-function Cv() {
+function Profile() {
   return (
     <div className="font-sans">
       <Navbar />
@@ -27,4 +27,4 @@ function Cv() {
   );
 }
 
-export default Cv;
+export default Profile;
