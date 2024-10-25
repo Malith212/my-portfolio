@@ -10,31 +10,35 @@ const Certifications = () => {
   const certifications = [
     {
       title: "Start the UX Design Process: Empathize, Define, and Ideate - Google",
-      link: "https://www.certificate-link.com", // Replace with actual link
+      link: "https://coursera.org/share/fa620b1f1a664ee65bd813d617b2ec7b", 
     },
     {
       title: "Programming with JavaScript - Meta",
-      link: "https://www.certificate-link.com", // Replace with actual link
+      link: "https://coursera.org/share/ea702b01245c4a96f6f45413c9757e1a", 
+    },
+    {
+      title: "Version Control - Meta",
+      link: "https://coursera.org/share/eaa181d3fecc3d2e01cbfc2ecf93121b", 
     },
     {
       title: "Build Wireframes and Low-Fidelity Prototypes - Google",
-      link: "https://www.certificate-link.com", // Replace with actual link
+      link: "https://coursera.org/share/ae6ab95f98563214a1447ad0eca8d9d8", // Replace with actual link
     },
     {
       title: "Conduct UX Research and Test Early Concepts - Google",
-      link: "https://www.certificate-link.com", // Replace with actual link
+      link: "https://coursera.org/share/3f1a96b737a7028b5e7ea0dcf5d951d3", 
     },
     {
       title: "Foundations of User Experience (UX) Design - Google",
-      link: "https://www.certificate-link.com", // Replace with actual link
+      link: "https://coursera.org/share/a0e10035e3935b7a6ae66b0560518f23", 
     },
     {
       title: "Create High-Fidelity Designs and Prototypes in Figma - Google",
-      link: "https://www.certificate-link.com", // Replace with actual link
+      link: "https://coursera.org/share/bb1520d00a5f3520162631d7493002bf", 
     },
     {
       title: "Introduction to Front-End Development - Meta",
-      link: "https://www.certificate-link.com", // Replace with actual link
+      link: "https://coursera.org/share/8de2d9a3593d19ba48e0d74aaf40f761", 
     },
   ];
 
