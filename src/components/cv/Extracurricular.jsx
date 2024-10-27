@@ -23,6 +23,10 @@ const Extracurricular = () => {
             <p className="text-white text-sm">2022 - Present</p>
             <ul className="list-disc pl-5 text-sm text-white mt-2">
               <li>
+                Pillar Head of the Creative Design pillar (2024 -
+                2025)
+              </li>
+              <li>
                 Assistant Lead of the Photography and Videography pillar (2023 -
                 2024)
               </li>
