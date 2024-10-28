@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Education = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // `duration` controls the animation speed, `once` makes it play only once
+  }, []);
+
   const educationDetails = [
     {
       year: "2022 - Present",
@@ -37,6 +43,7 @@ const Education = () => {
             <div
               key={index}
               className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-6 rounded-lg shadow-md border border-gray-200 transform transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up" // Set the AOS animation
             >
               <p className="text-sm font-semibold text-white mb-2">
                 {item.year}

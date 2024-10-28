@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Achievements = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const achievementsData = [
     {
       id: 1,
@@ -29,10 +35,12 @@ const Achievements = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-bold mb-6 text-gray-800">Achievements</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {achievementsData.map((achievement) => (
+          {achievementsData.map((achievement, index) => (
             <div
               key={achievement.id}
               className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-6 rounded-lg shadow-md border border-gray-200 transform transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up"
+              data-aos-delay={index * 100} // Staggered delay for each card
             >
               <h3 className="text-lg font-normal">{achievement.title}</h3>
               <p className="text-white text-sm font-light">{achievement.organization}</p>
