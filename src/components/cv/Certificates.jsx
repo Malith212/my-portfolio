@@ -1,7 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Certifications = () => {
   const [openCert, setOpenCert] = useState(null);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
   const toggleCert = (index) => {
     setOpenCert(openCert === index ? null : index);
@@ -22,7 +28,7 @@ const Certifications = () => {
     },
     {
       title: "Build Wireframes and Low-Fidelity Prototypes - Google",
-      link: "https://coursera.org/share/ae6ab95f98563214a1447ad0eca8d9d8", // Replace with actual link
+      link: "https://coursera.org/share/ae6ab95f98563214a1447ad0eca8d9d8", 
     },
     {
       title: "Conduct UX Research and Test Early Concepts - Google",
@@ -48,7 +54,12 @@ const Certifications = () => {
         <h2 className="text-2xl font-bold mb-6 text-gray-800">Certifications</h2>
         <div className="space-y-4">
           {certifications.map((cert, index) => (
-            <div key={index} className="border bg-gradient-to-r from-[#141E30] to-[#243B55] text-white rounded-lg shadow-sm">
+            <div
+              key={index}
+              className="border bg-gradient-to-r from-[#141E30] to-[#243B55] text-white rounded-lg shadow-sm"
+              data-aos="fade-up"
+              data-aos-delay={index * 100} // Adds staggered delay for each item
+            >
               <button
                 onClick={() => toggleCert(index)}
                 className="w-full flex justify-between items-center py-4 px-6 text-left focus:outline-none"
