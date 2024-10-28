@@ -6,7 +6,7 @@ const Education = () => {
       year: "2022 - Present",
       degree: "B.Sc. (Hons) in Information Technology and Management",
       institution: "Faculty of Information Technology, University of Moratuwa",
-      details: "CGPA: 3.60 (up to L2S1)",
+      details: "CGPA: 3.60 (up to L2S2)",
     },
     {
       year: "2021 - 2022",
