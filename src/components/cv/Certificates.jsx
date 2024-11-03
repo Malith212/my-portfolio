@@ -6,17 +6,17 @@ const Certifications = () => {
   const [openCert, setOpenCert] = useState(null);
 
   useEffect(() => {
-    // Initialize AOS only if the screen width is 768px or less (mobile view)
+
     const handleResize = () => {
       if (window.innerWidth <= 768) {
         AOS.init({ duration: 1000, once: true });
       }
     };
 
-    handleResize(); // Check on initial render
-    window.addEventListener('resize', handleResize); // Listen for screen resize
+    handleResize(); 
+    window.addEventListener('resize', handleResize); 
 
-    return () => window.removeEventListener('resize', handleResize); // Cleanup
+    return () => window.removeEventListener('resize', handleResize); 
   }, []);
 
   const toggleCert = (index) => {
