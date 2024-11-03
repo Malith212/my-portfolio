@@ -6,7 +6,17 @@ const Certifications = () => {
   const [openCert, setOpenCert] = useState(null);
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    // Initialize AOS only if the screen width is 768px or less (mobile view)
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        AOS.init({ duration: 1000, once: true });
+      }
+    };
+
+    handleResize(); // Check on initial render
+    window.addEventListener('resize', handleResize); // Listen for screen resize
+
+    return () => window.removeEventListener('resize', handleResize); // Cleanup
   }, []);
 
   const toggleCert = (index) => {
@@ -57,8 +67,8 @@ const Certifications = () => {
             <div
               key={index}
               className="border bg-gradient-to-r from-[#141E30] to-[#243B55] text-white rounded-lg shadow-sm"
-              data-aos="fade-up"
-              data-aos-delay={index * 100} // Adds staggered delay for each item
+              data-aos={window.innerWidth <= 768 ? "fade-up" : ""}
+              data-aos-delay={window.innerWidth <= 768 ? index * 100 : 0} // Staggered delay only on mobile
             >
               <button
                 onClick={() => toggleCert(index)}
