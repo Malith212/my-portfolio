@@ -4,7 +4,17 @@ import "aos/dist/aos.css";
 
 const Education = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true }); // `duration` controls the animation speed, `once` makes it play only once
+    // Initialize AOS only if the screen width is 768px or less (mobile view)
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        AOS.init({ duration: 1000, once: true });
+      }
+    };
+
+    handleResize(); // Check on initial render
+    window.addEventListener('resize', handleResize); // Listen for screen resize
+
+    return () => window.removeEventListener('resize', handleResize); // Cleanup
   }, []);
 
   const educationDetails = [
@@ -43,7 +53,8 @@ const Education = () => {
             <div
               key={index}
               className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-6 rounded-lg shadow-md border border-gray-200 transform transition-transform duration-300 hover:scale-105"
-              data-aos="fade-up" // Set the AOS animation
+              data-aos={window.innerWidth <= 768 ? "fade-up" : ""}
+              data-aos-delay={window.innerWidth <= 768 ? index * 100 : 0} // Staggered delay only on mobile
             >
               <p className="text-sm font-semibold text-white mb-2">
                 {item.year}
