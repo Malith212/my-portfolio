@@ -4,7 +4,17 @@ import "aos/dist/aos.css";
 
 const Extracurricular = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    // Initialize AOS only if the screen width is 768px or less (mobile view)
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        AOS.init({ duration: 1000, once: true });
+      }
+    };
+
+    handleResize(); // Check on initial render
+    window.addEventListener('resize', handleResize); // Listen for screen resize
+
+    return () => window.removeEventListener('resize', handleResize); // Cleanup
   }, []);
 
   return (
@@ -17,7 +27,7 @@ const Extracurricular = () => {
           {/* ITM Degree Batch Representative */}
           <div
             className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-4 border rounded-lg shadow-sm transform transition-transform duration-300 hover:scale-105"
-            data-aos="fade-up"
+            data-aos={window.innerWidth <= 768 ? "fade-up" : ""}
           >
             <h3 className="text-md font-normal text-white">
               Main Batch Representative of ITM Degree, Faculty of Information
@@ -29,8 +39,8 @@ const Extracurricular = () => {
           {/* FIT Moments */}
           <div
             className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-4 border rounded-lg shadow-sm transform transition-transform duration-300 hover:scale-105"
-            data-aos="fade-up"
-            data-aos-delay="200" // Add a delay for staggered effect
+            data-aos={window.innerWidth <= 768 ? "fade-up" : ""}
+            data-aos-delay={window.innerWidth <= 768 ? "200" : "0"} // Staggered delay for mobile only
           >
             <h3 className="text-md font-normal text-white">FIT Moments</h3>
             <p className="text-white text-sm">2022 - Present</p>
@@ -44,8 +54,8 @@ const Extracurricular = () => {
           {/* IEEE Student Branch */}
           <div
             className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-4 border rounded-lg shadow-sm transform transition-transform duration-300 hover:scale-105"
-            data-aos="fade-up"
-            data-aos-delay="400" // Further delay for staggered effect
+            data-aos={window.innerWidth <= 768 ? "fade-up" : ""}
+            data-aos-delay={window.innerWidth <= 768 ? "400" : "0"} // Further delay for staggered effect on mobile
           >
             <h3 className="text-md font-normal text-white">
               IEEE Student Branch University of Moratuwa
