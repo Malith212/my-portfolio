@@ -4,7 +4,17 @@ import 'aos/dist/aos.css';
 
 const Languages = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    // Initialize AOS only if the screen width is 768px or less (mobile view)
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        AOS.init({ duration: 1000, once: true });
+      }
+    };
+
+    handleResize(); // Check on initial render
+    window.addEventListener('resize', handleResize); // Listen for screen resize
+
+    return () => window.removeEventListener('resize', handleResize); // Cleanup
   }, []);
 
   const languagesData = [
@@ -22,8 +32,8 @@ const Languages = () => {
             <div
               key={lang.id}
               className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
-              data-aos="fade-up"
-              data-aos-delay={index * 100} // Staggered delay for each card
+              data-aos={window.innerWidth <= 768 ? "fade-up" : ""}
+              data-aos-delay={window.innerWidth <= 768 ? index * 100 : 0} // Staggered delay for mobile only
             >
               <h3 className="text-lg font-bold">{lang.language}</h3>
               <p className="text-white text-sm font-thin">{lang.proficiency}</p>
