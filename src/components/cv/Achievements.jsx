@@ -4,17 +4,17 @@ import 'aos/dist/aos.css';
 
 const Achievements = () => {
   useEffect(() => {
-    // Initialize AOS only if screen width is 768px or less (mobile view)
+
     const handleResize = () => {
       if (window.innerWidth <= 768) {
         AOS.init({ duration: 1000, once: true });
       }
     };
 
-    handleResize(); // Check on initial render
-    window.addEventListener('resize', handleResize); // Listen for screen resize
+    handleResize(); 
+    window.addEventListener('resize', handleResize); 
 
-    return () => window.removeEventListener('resize', handleResize); // Cleanup
+    return () => window.removeEventListener('resize', handleResize); 
   }, []);
 
   const achievementsData = [
@@ -50,7 +50,7 @@ const Achievements = () => {
               key={achievement.id}
               className="bg-gradient-to-r from-[#141E30] to-[#243B55] text-white p-6 rounded-lg shadow-md border border-gray-200 transform transition-transform duration-300 hover:scale-105"
               data-aos={window.innerWidth <= 768 ? "fade-up" : ""}
-              data-aos-delay={window.innerWidth <= 768 ? index * 100 : 0} // Staggered delay only on mobile
+              data-aos-delay={window.innerWidth <= 768 ? index * 100 : 0} 
             >
               <h3 className="text-lg font-normal">{achievement.title}</h3>
               <p className="text-white text-sm font-light">{achievement.organization}</p>
