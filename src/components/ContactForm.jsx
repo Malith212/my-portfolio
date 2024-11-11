@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com"; // Import EmailJS
+import emailjs from "emailjs-com"; 
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -19,16 +19,16 @@ const ContactForm = () => {
 
     emailjs
       .send(
-        "service_qlpppxc", // Your Service ID
-        "template_szcwx7n", // Your Template ID
+        "service_qlpppxc", 
+        "template_szcwx7n", 
         formData,
-        "T4xt20ZdK91D2REf2" // Your User ID (Public Key)
+        "T4xt20ZdK91D2REf2" 
       )
       .then((response) => {
         console.log("Email sent successfully!", response.status, response.text);
         setModalMessage("Your message has been sent successfully!");
         setIsModalOpen(true);
-        setFormData({ name: "", email: "", message: "" }); // Clear form
+        setFormData({ name: "", email: "", message: "" }); 
       })
       .catch((err) => {
         console.error("Failed to send email. Error:", err);
@@ -96,7 +96,7 @@ const ContactForm = () => {
         </div>
       </div>
 
-      {/* Modal for Success or Error Message */}
+   
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-6 shadow-lg text-center">
