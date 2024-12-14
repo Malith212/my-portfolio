@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Select from "react-select";
 import project1Image from "../assets/Beatflow.png";
 import project2Image from "../assets/Burger app.png";
-import baristaAppImage from "../assets/barista.jpeg"; // New Barista project image
+import baristaAppImage from "../assets/barista.jpeg"; 
 
 const projectsData = {
   "UX Case Studies": [
@@ -25,7 +25,7 @@ const projectsData = {
       title: "Barista Mobile App UX Case Study",
       description:
         "Introducing the Barista Mobile App design – an intuitive app concept aimed at enhancing the customer experience for Barista Coffee Lanka. This project focuses on simplifying online orders, secure payments, and personalized user engagement, all while reflecting the warmth of Barista's brand.",
-      link: "https://www.behance.net/gallery/214266953/Barista-Mobile-App-Concept-Design-", // Replace 'xxxxxx' with the actual Behance link
+      link: "https://www.behance.net/gallery/214266953/Barista-Mobile-App-Concept-Design-",
     },
   ],
   "Frontend Projects": [],
