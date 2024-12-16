@@ -2,19 +2,19 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-  const [section, setSection] = useState(''); // State to track current section
-  const location = useLocation(); // Hook to get the current location
+  const [section, setSection] = useState(''); 
+  const location = useLocation(); 
 
   useEffect(() => {
-    // Update section based on the current pathname
+    
     if (location.pathname === '/cv') {
       setSection('Resume');
     } else if (location.pathname === '/profile') {
       setSection('Profile');
     } else {
-      setSection(''); // Reset to root on page load or refresh
+      setSection(''); 
     }
-  }, [location.pathname]); // Depend on location.pathname to trigger updates
+  }, [location.pathname]); 
 
   return (
     <nav className="fixed w-full bg-white shadow-md p-4 z-50">
