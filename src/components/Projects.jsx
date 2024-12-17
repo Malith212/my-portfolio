@@ -1,8 +1,10 @@
+
 import React, { useState } from "react";
 import Select from "react-select";
 import project1Image from "../assets/Beatflow.png";
 import project2Image from "../assets/Burger app.png";
 import baristaAppImage from "../assets/barista.jpeg"; 
+import portfolioImage from "../assets/portfolio .png";
 
 const projectsData = {
   "UX Case Studies": [
@@ -28,10 +30,19 @@ const projectsData = {
       link: "https://www.behance.net/gallery/214266953/Barista-Mobile-App-Concept-Design-",
     },
   ],
-  "Frontend Projects": [],
+  "Frontend Projects": [
+    {
+      image: portfolioImage, // Replace with an actual image path if available
+      title: "My Portfolio Site",
+      description:
+        "After weeks of development, I'm excited to share my new portfolio site! Built with React.js, styled with Tailwind CSS, designed in Figma, and powered by EmailJS for easy contact. 🌐",
+      link: "https://lnkd.in/gX_7QFzM",
+    },
+  ],
   "Full Stack Projects": [],
   "Other Projects": [],
 };
+
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("UX Case Studies");
@@ -97,7 +108,7 @@ const Projects = () => {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
           {selectedProjects.length > 0 ? (
             selectedProjects.map((project, index) => (
               <div
