@@ -42,12 +42,13 @@ const projectsData = {
   ],
   "Full Stack Projects": [
     {
-      image: vehiclehub, // Replace with an actual image of the Vehicle Hub project if available
-      title: "The Vehicle Hub Project: Transforming Vehicle Rental Management 🚗",
+      image: vehiclehub, // Replace with an actual image path if available
+      title: "The Vehicle Hub Project 🚗",
       description:
-        "The Vehicle Hub project revolutionizes vehicle rental management by addressing common industry challenges such as booking inefficiencies and billing complexities. Through automation and an intuitive user interface, the system enhances the customer experience, streamlines reservations, and provides robust reporting features. This comprehensive platform aims to set new standards in the car rental sector.\n\nTech Stack: React, .NET, Tailwind CSS, MsSql\n\n**My Role:**\n- **Reports:** Created essential reports, including vehicle utilization, feedback, and revenue tracking, to support operational insights.\n- **Payment Gateway:** Integrated Stripe for seamless and secure payment processing.\n- **Admin Dashboard:** Developed data-driven insights for the admin dashboard to empower data-informed decision-making.",
+        "A comprehensive platform that automates vehicle rental management, streamlining reservations, billing, and reporting. Enhanced with an intuitive UI, it improves customer experience and operational efficiency.\n\n**Tech Stack:** React, .NET, Tailwind CSS, MsSQL\n\n**My Role:**\n- Created reports (vehicle utilization, feedback, revenue).\n- Integrated Stripe for secure payments.\n- Developed data-driven admin dashboard insights.",
       link: "https://www.behance.net/", // Replace with the actual project link if available
-    },
+    }
+    
   ],
   "Other Projects": [],
 };
