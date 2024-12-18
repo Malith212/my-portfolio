@@ -5,6 +5,7 @@ import project1Image from "../assets/Beatflow.png";
 import project2Image from "../assets/Burger app.png";
 import baristaAppImage from "../assets/barista.jpeg"; 
 import portfolioImage from "../assets/portfolio .png";
+import vehiclehub from "../assets/Vehicle Hub.png";
 
 const projectsData = {
   "UX Case Studies": [
@@ -39,7 +40,15 @@ const projectsData = {
       link: "https://lnkd.in/gX_7QFzM",
     },
   ],
-  "Full Stack Projects": [],
+  "Full Stack Projects": [
+    {
+      image: vehiclehub, // Replace with an actual image of the Vehicle Hub project if available
+      title: "The Vehicle Hub Project: Transforming Vehicle Rental Management 🚗",
+      description:
+        "The Vehicle Hub project revolutionizes vehicle rental management by addressing common industry challenges such as booking inefficiencies and billing complexities. Through automation and an intuitive user interface, the system enhances the customer experience, streamlines reservations, and provides robust reporting features. This comprehensive platform aims to set new standards in the car rental sector.\n\nTech Stack: React, .NET, Tailwind CSS, MsSql\n\n**My Role:**\n- **Reports:** Created essential reports, including vehicle utilization, feedback, and revenue tracking, to support operational insights.\n- **Payment Gateway:** Integrated Stripe for seamless and secure payment processing.\n- **Admin Dashboard:** Developed data-driven insights for the admin dashboard to empower data-informed decision-making.",
+      link: "https://www.behance.net/", // Replace with the actual project link if available
+    },
+  ],
   "Other Projects": [],
 };
 
