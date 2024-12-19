@@ -37,7 +37,7 @@ const projectsData = {
       title: "My Portfolio Site",
       description:
         "After weeks of development, I'm excited to share my new portfolio site! Built with React.js, styled with Tailwind CSS, designed in Figma, and powered by EmailJS for easy contact. 🌐",
-      link: "https://lnkd.in/gX_7QFzM",
+      link: "https://malitweerarathne.netlify.app/",
     },
   ],
   "Full Stack Projects": [
@@ -46,7 +46,7 @@ const projectsData = {
       title: "The Vehicle Hub Project 🚗",
       description:
         "A comprehensive platform that automates vehicle rental management, streamlining reservations, billing, and reporting. Enhanced with an intuitive UI, it improves customer experience and operational efficiency.\n\n**Tech Stack:** React, .NET, Tailwind CSS, MsSQL\n\n**My Role:**\n- Created reports (vehicle utilization, feedback, revenue).\n- Integrated Stripe for secure payments.\n- Developed data-driven admin dashboard insights.",
-      link: "https://www.behance.net/", // Replace with the actual project link if available
+      link: "https://github.com/NavodhSFernando/vehicle-hub", // Replace with the actual project link if available
     }
     
   ],
