@@ -33,7 +33,7 @@ const projectsData = {
   ],
   "Frontend Projects": [
     {
-      image: portfolioImage, // Replace with an actual image path if available
+      image: portfolioImage, 
       title: "My Portfolio Site",
       description:
         "After weeks of development, I'm excited to share my new portfolio site! Built with React.js, styled with Tailwind CSS, designed in Figma, and powered by EmailJS for easy contact. 🌐",
@@ -42,11 +42,11 @@ const projectsData = {
   ],
   "Full Stack Projects": [
     {
-      image: vehiclehub, // Replace with an actual image path if available
+      image: vehiclehub, 
       title: "The Vehicle Hub Project 🚗",
       description:
         "A comprehensive platform that automates vehicle rental management, streamlining reservations, billing, and reporting. Enhanced with an intuitive UI, it improves customer experience and operational efficiency.\n\n**Tech Stack:** React, .NET, Tailwind CSS, MsSQL\n\n**My Role:**\n- Created reports (vehicle utilization, feedback, revenue).\n- Integrated Stripe for secure payments.\n- Developed data-driven admin dashboard insights.",
-      link: "https://github.com/NavodhSFernando/vehicle-hub", // Replace with the actual project link if available
+      link: "https://github.com/NavodhSFernando/vehicle-hub", 
     }
     
   ],
