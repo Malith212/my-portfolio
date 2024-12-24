@@ -52,7 +52,7 @@ const Certifications = () => {
               key={index}
               className="border bg-gradient-to-r from-[#141E30] to-[#243B55] text-white rounded-lg shadow-sm"
               data-aos={window.innerWidth <= 768 ? "fade-up" : ""}
-              data-aos-delay={window.innerWidth <= 768 ? index * 100 : 0} // Staggered delay only on mobile
+              data-aos-delay={window.innerWidth <= 768 ? index * 100 : 0} 
             >
               <button
                 onClick={() => toggleCert(index)}
