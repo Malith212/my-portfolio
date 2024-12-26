@@ -10,6 +10,13 @@ import vehiclehub from "../assets/Vehicle Hub.png";
 const projectsData = {
   "UX Case Studies": [
     {
+      image: baristaAppImage,
+      title: "Barista Mobile App UX Case Study",
+      description:
+        "Introducing the Barista Mobile App design – an intuitive app concept aimed at enhancing the customer experience for Barista Coffee Lanka. This project focuses on simplifying online orders, secure payments, and personalized user engagement, all while reflecting the warmth of Barista's brand.",
+      link: "https://www.behance.net/gallery/214266953/Barista-Mobile-App-Concept-Design-",
+    },
+    {
       image: project1Image,
       title: "BeatFlow Music App UX Case Study",
       description:
@@ -23,13 +30,7 @@ const projectsData = {
         "As an avid foodie and a dedicated UX designer, I am thrilled to share my latest project - the redesign of Gourmet Grub, a food delivery app that promises quick delivery and a mouth-watering selection of dishes. With the aim to entice and engage users at first glance, my goal was to deliver a visual and interactive feast.",
       link: "https://www.behance.net/gallery/198840951/Burger-App",
     },
-    {
-      image: baristaAppImage,
-      title: "Barista Mobile App UX Case Study",
-      description:
-        "Introducing the Barista Mobile App design – an intuitive app concept aimed at enhancing the customer experience for Barista Coffee Lanka. This project focuses on simplifying online orders, secure payments, and personalized user engagement, all while reflecting the warmth of Barista's brand.",
-      link: "https://www.behance.net/gallery/214266953/Barista-Mobile-App-Concept-Design-",
-    },
+
   ],
   "Frontend Projects": [
     {
