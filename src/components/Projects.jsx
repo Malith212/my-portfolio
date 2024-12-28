@@ -1,9 +1,8 @@
-
 import React, { useState } from "react";
 import Select from "react-select";
 import project1Image from "../assets/Beatflow.png";
 import project2Image from "../assets/Burger app.png";
-import baristaAppImage from "../assets/barista.jpeg"; 
+import baristaAppImage from "../assets/barista.jpeg";
 import portfolioImage from "../assets/portfolio .png";
 import vehiclehub from "../assets/Vehicle Hub.png";
 
@@ -30,11 +29,10 @@ const projectsData = {
         "As an avid foodie and a dedicated UX designer, I am thrilled to share my latest project - the redesign of Gourmet Grub, a food delivery app that promises quick delivery and a mouth-watering selection of dishes. With the aim to entice and engage users at first glance, my goal was to deliver a visual and interactive feast.",
       link: "https://www.behance.net/gallery/198840951/Burger-App",
     },
-
   ],
   "Frontend Projects": [
     {
-      image: portfolioImage, 
+      image: portfolioImage,
       title: "My Portfolio Site",
       description:
         "After weeks of development, I'm excited to share my new portfolio site! Built with React.js, styled with Tailwind CSS, designed in Figma, and powered by EmailJS for easy contact. 🌐",
@@ -43,17 +41,15 @@ const projectsData = {
   ],
   "Full Stack Projects": [
     {
-      image: vehiclehub, 
+      image: vehiclehub,
       title: "The Vehicle Hub Project 🚗",
       description:
-        "A comprehensive platform that automates vehicle rental management, streamlining reservations, billing, and reporting. Enhanced with an intuitive UI, it improves customer experience and operational efficiency.\n\n**Tech Stack:** React, .NET, Tailwind CSS, MsSQL\n\n**My Role:**\n- Created reports (vehicle utilization, feedback, revenue).\n- Integrated Stripe for secure payments.\n- Developed data-driven admin dashboard insights.",
-      link: "https://github.com/NavodhSFernando/vehicle-hub", 
-    }
-    
+        "A comprehensive platform that automates vehicle rental management, streamlining reservations, billing, and reporting. Enhanced with an intuitive UI, it improves customer experience and operational efficiency. The platform was built using React, .NET, Tailwind CSS, and MsSQL, featuring secure payment integration with Stripe and advanced data-driven insights.",
+      link: "https://github.com/NavodhSFernando/vehicle-hub",
+    },
   ],
   "Other Projects": [],
 };
-
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("UX Case Studies");
@@ -154,7 +150,9 @@ const Projects = () => {
               </div>
             ))
           ) : (
-            <p className="text-gray-400 text-left">No projects available in this category.</p>
+            <p className="text-gray-400 text-left">
+              No projects available in this category.
+            </p>
           )}
         </div>
       </div>
