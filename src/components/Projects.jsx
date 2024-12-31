@@ -44,7 +44,7 @@ const projectsData = {
       image: vehiclehub,
       title: "The Vehicle Hub Project 🚗",
       description:
-        "A comprehensive platform that automates vehicle rental management, streamlining reservations, billing, and reporting. Enhanced with an intuitive UI, it improves customer experience and operational efficiency. The platform was built using React, .NET, Tailwind CSS, and MsSQL, featuring secure payment integration with Stripe and advanced data-driven insights.",
+        "A comprehensive platform that automates vehicle rental management, streamlining reservations, billing, and reporting. Enhanced with an intuitive UI, it improves customer experience and operational efficiency.\n\n**Tech Stack:** React, .NET, Tailwind CSS, MsSQL\n\n**My Role:**\n- Created reports (vehicle utilization, feedback, revenue).\n- Integrated Stripe for secure payments.\n- Developed data-driven admin dashboard insights.",
       link: "https://github.com/NavodhSFernando/vehicle-hub",
     },
   ],
